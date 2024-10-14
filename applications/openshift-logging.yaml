@@ -12,7 +12,7 @@ spec:
 #    directory:
 #      jsonnet: {}
 #      recurse: false
-    path: openshift-logging/overlays/rhpd
+    path: openshift-logging/overlays/aro
     repoURL: https://github.com/crscottau/aro-gitops.git
     targetRevision: HEAD
   syncPolicy:
