@@ -8,7 +8,7 @@ resources:
 patches:
 - path: patches-logging-sub.yaml
   target:
-    kind: "Subscription"
-    name: openshift-logging 
+    kind: Subscription
+    name: cluster-logging 
 
 
