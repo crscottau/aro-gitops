@@ -1,0 +1,6 @@
+$patch: delete
+apiVersion: logging.openshift.io/v1
+kind: ClusterLogForwarder
+metadata:
+  name: instance-rsyslog
+  namespace: openshift-logging

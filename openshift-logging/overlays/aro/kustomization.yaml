@@ -11,5 +11,8 @@ patches:
   target:
     kind: Subscription
     name: cluster-logging 
-
+- path: patches-delete-instance-rsyslog.yaml
+  target:
+    kind: ClusterLogForwarder
+    name: instance-rsyslog 
 
