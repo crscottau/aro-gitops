@@ -1,0 +1,4 @@
+---
+- op: "replace"
+  path: "/spec/source"
+  value: "cs-rehhat-operator-index"
