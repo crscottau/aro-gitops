@@ -24,6 +24,9 @@ mirror:
       - name: rhbk-operator
         channels:
           - name: stable-v24
+      - name: openshift-pipelines-operator-rh
+        channels:
+          - name: latest
   additionalImages:
   - name: registry.redhat.io/openshift4/ose-cli:v4.15
   - name: k8s.gcr.io/e2e-test-images/busybox:1.29

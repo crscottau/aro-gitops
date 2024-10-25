@@ -3,8 +3,16 @@ kind: Kustomization
 
 resources:
 - ../../base
-
-patchesStrategicMerge:
-- logging-sub.yaml
 - logging-cluster-log-forwarder.yaml
+- logging-cluster-logging.yaml
+
+patches:
+- path: patches-logging-sub.yaml
+  target:
+    kind: Subscription
+    name: cluster-logging 
+- path: patches-delete-instance-rsyslog.yaml
+  target:
+    kind: ClusterLogForwarder
+    name: instance-rsyslog 
 
