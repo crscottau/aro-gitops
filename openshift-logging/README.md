@@ -2,6 +2,8 @@
 
 Logging to LAW
 
+https://cloud.redhat.com/experts/aro/clf-to-azure/
+
 ## Azure setup
 
 Prepare

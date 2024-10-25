@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - ../../base
 - logging-cluster-log-forwarder.yaml
+- logging-cluster-logging.yaml
 
 patches:
 - path: patches-logging-sub.yaml
