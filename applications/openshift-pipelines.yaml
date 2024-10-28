@@ -14,6 +14,6 @@ spec:
 #      recurse: false
     path: openshift-pipelines/overlays/aro
     repoURL: https://github.com/crscottau/aro-gitops.git
-    targetRevision: t14
+    targetRevision: HEAD
   syncPolicy:
     automated: {}
