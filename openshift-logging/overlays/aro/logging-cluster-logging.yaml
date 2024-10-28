@@ -9,4 +9,3 @@ metadata:
 spec:
   collection:
     type: vector
-    vector: {}
