@@ -12,4 +12,4 @@ https://docs.redhat.com/en/documentation/red_hat_build_of_keycloak/22.0/html/ope
 
 ## DB secret
 
-`oc -n keycloak create secret generic keycloak-db-secret --from-literal=username=pg_user --from-literal=password=pg_password`
+`oc -n keycloak create secret generic keycloak-db-secret --from-literal=username=postgres --from-literal=password="bollocks!"`
