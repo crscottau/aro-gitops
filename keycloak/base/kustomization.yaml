@@ -7,4 +7,4 @@ resources:
 - subscription.yaml
 - postgres-db.yaml  
 - postgres-service.yaml  
-#- keycloak.yaml  
+- keycloak.yaml  
