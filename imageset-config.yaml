@@ -33,7 +33,7 @@ mirror:
   - name: registry.connect.redhat.com/sumologic/busybox:1.36.0-ubi
   helm: 
     repositories:
-    - name: csi-secrets-store-provider-azure
+    - name: craigacr-csi-secrets-store-provider-azure
       url: https://kubernetes-sigs.github.io/secrets-store-csi-driver/charts
-    - name: csi-secrets-store-provider-azure
+    - name: craigacr-csi-secrets-store-provider-azure
       url: https://azure.github.io/secrets-store-csi-driver-provider-azure/charts
