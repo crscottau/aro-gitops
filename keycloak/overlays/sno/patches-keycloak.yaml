@@ -1,0 +1,4 @@
+---
+- op: "replace"
+  path: "/spec/hostname/hostname"
+  value: "keycloak.x4pnfp.azure.redhatworkshops.io"
