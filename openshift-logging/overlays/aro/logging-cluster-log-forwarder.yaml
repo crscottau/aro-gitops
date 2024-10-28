@@ -11,14 +11,14 @@ spec:
   - name: azure-monitor-app
     type: azureMonitor
     azureMonitor:
-      customerId: d8cc13a8-6fb7-4774-8c00-913ea6451718
+      customerId: 0f52580a-d37c-4a8d-a625-9864cf79147d
       logType: aro_application_logs
     secret:
       name: azure-monitor-shared-key
   - name: azure-monitor-infra
     type: azureMonitor
     azureMonitor:
-      customerId: d8cc13a8-6fb7-4774-8c00-913ea6451718
+      customerId: 0f52580a-d37c-4a8d-a625-9864cf79147d
       logType: aro_infrastructure_logs
     secret:
       name: azure-monitor-shared-key
