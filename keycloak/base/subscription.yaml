@@ -5,7 +5,7 @@ metadata:
   namespace: keycloak
 spec:
   channel: stable-v24
-  installPlanApproval: Manual
+  installPlanApproval: Automatic
   name: rhbk-operator
   source: cs-redhat-operator-index
   sourceNamespace: openshift-marketplace

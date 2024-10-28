@@ -22,7 +22,10 @@ spec:
               name: cache-volume
           env:
             - name: POSTGRES_PASSWORD
-              value: testpassword
+              valueFrom: 
+                secretKeyRef:
+                  name: keycloak_db_secret
+                  key: password
             - name: PGDATA
               value: /data/pgdata
             - name: POSTGRES_DB
