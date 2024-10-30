@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: etcd-encryption
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: keyclopenshift-gitopsoak
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+#    directory:
+#      jsonnet: {}
+#      recurse: false
+    path: etcd-encryption
+    repoURL: https://github.com/crscottau/aro-gitops.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}
