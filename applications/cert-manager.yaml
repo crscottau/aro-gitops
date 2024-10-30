@@ -12,7 +12,7 @@ spec:
 #    directory:
 #      jsonnet: {}
 #      recurse: false
-    path: cert-manager
+    path: cert-manager/overlays/sno
     repoURL: https://github.com/crscottau/aro-gitops.git
     targetRevision: HEAD
   syncPolicy:
