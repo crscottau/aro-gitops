@@ -1,0 +1,8 @@
+apiVersion: project.openshift.io/v1
+kind: Project
+metadata:
+  annotations:
+    openshift.io/description: Project to host CP4i based applications
+    openshift.io/display-name: CP4i
+  name: cp4i
+

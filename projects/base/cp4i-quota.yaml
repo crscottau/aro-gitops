@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: cp4i-compute-resources
+  namespace: cp4i
+spec:
+  hard:
+    limits.cpu: "2"
+    limits.memory: 2Gi
+    pods: "16"
+    requests.cpu: "1"
+    requests.memory: 1Gi
+status:
+  hard:
+    limits.cpu: "2"
+    limits.memory: 2Gi
+    pods: "16"
+    requests.cpu: "1"
+    requests.memory: 1Gi
+  used:
+    limits.cpu: "0"
+    limits.memory: "0"
+    pods: "0"
+    requests.cpu: "0"
+    requests.memory: "0"
