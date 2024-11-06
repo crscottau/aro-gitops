@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 export KUBECONFIG=/home/crscott/tmp/kubeconfig
+export MIRROR_YAML_LOCATION=/home/crscott/tmp
 export BYPASS_TLS=true
 
 OC="oc --kubeconfig ${KUBECONFIG} --insecure-skip-tls-verify=${BYPASS_TLS}" 
@@ -9,8 +10,8 @@ echo Authenticating to the cluster as \"$(${OC} whoami)\"
 
 echo Applying the Catalogue Source and ICSP files:
 ${OC} patch OperatorHub cluster --type json --patch '[{"op": "add", "path": "/spec/disableAllDefaultSources", "value": true}]'
-${OC} apply -f catalogSource-cs-redhat-operator-index.yaml                             
-${OC} apply -f imageContentSourcePolicy.yaml
+${OC} apply -f ${MIRROR_YAML_LOCATION}/catalogSource-cs-redhat-operator-index.yaml                             
+${OC} apply -f ${MIRROR_YAML_LOCATION}/imageContentSourcePolicy.yaml
 echo ""
 
 echo Preparing OpenShift GitOps to run with ClusterAdmin privileges
