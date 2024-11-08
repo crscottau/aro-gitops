@@ -29,8 +29,8 @@ mirror:
           - name: latest
   additionalImages:
   - name: registry.redhat.io/openshift4/ose-cli:v4.15
-  - name: k8s.gcr.io/e2e-test-images/busybox:1.29
   - name: registry.connect.redhat.com/sumologic/busybox:1.36.0-ubi
+  - name: docker.io/postgres:latest
   helm: 
     repositories:
     - name: secrets-store-csi-driver
