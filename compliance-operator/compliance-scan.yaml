@@ -1,0 +1,20 @@
+---
+apiVersion: compliance.openshift.io/v1alpha1
+kind: ScanSettingBinding
+metadata:
+  name: e8
+  namespace: openshift-compliance
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+    argocd.argoproj.io/sync-options: "SkipDryRunOnMissingResource=true"  
+profiles:
+  - name: ocp4-e8
+    apiGroup: compliance.openshift.io/v1alpha1
+    kind: Profile
+  - name: rhcos4-e8
+    apiGroup: compliance.openshift.io/v1alpha1
+    kind: Profile
+settingsRef:
+  name: default
+  apiGroup: compliance.openshift.io/v1alpha1
+  kind: ScanSetting

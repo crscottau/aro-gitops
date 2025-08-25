@@ -7,30 +7,25 @@ storageConfig:
     skipTLS: false
 mirror:
   operators:
-  - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.15  
+  - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.17
     packages:
       - name: cluster-logging
         channels:
-          - name: stable-5.9
+          - name: stable-6.3
+      - name: compliance-operator
+        channels:
+          - name: stable
       - name: openshift-gitops-operator
         channels:
           - name: latest
-      - name: openshift-cert-manager-operator
-        channels:
-          - name: stable-v1
-      - name: redhat-oadp-operator
-        channels:
-          - name: stable-1.4
-      - name: rhbk-operator
-        channels:
-          - name: stable-v24
       - name: openshift-pipelines-operator-rh
         channels:
           - name: latest
+      - name: redhat-oadp-operator
+        channels:
+          - name: stable-1.4
   additionalImages:
   - name: registry.redhat.io/openshift4/ose-cli:v4.15
-  - name: registry.connect.redhat.com/sumologic/busybox:1.36.0-ubi
-  - name: docker.io/postgres:latest
   helm: 
     repositories:
     - name: secrets-store-csi-driver
