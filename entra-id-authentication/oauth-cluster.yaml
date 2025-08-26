@@ -1,0 +1,22 @@
+apiVersion: config.openshift.io/v1
+kind: OAuth
+metadata:
+  name: cluster
+spec:
+  identityProviders:
+    - mappingMethod: claim
+      name: entra-id
+      openID:
+        ca:
+          name: openid-ca
+        claims:
+          email:
+            - upn
+          name:
+          preferredUsername:
+        clientID: 00000000-0000-0000-0000-00000000000
+        clientSecret:
+          name: openid-client-secret
+        extraScopes: []
+        issuer: https://login.microsoftonline.com/00000000-0000-0000-0000-00000000000/V2.0
+      type: OpenID
