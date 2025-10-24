@@ -6,6 +6,6 @@ metadata:
 spec:
   channel: latest
   installPlanApproval: Automatic
-  name: openshift-pipelines-operator
+  name: cluster-logging
   source: redhat-operators
   sourceNamespace: openshift-marketplace
