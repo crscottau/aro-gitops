@@ -7,5 +7,5 @@ spec:
   channel: latest
   installPlanApproval: Automatic
   name: openshift-gitops-operator
-  source: cs-redhat-operator-index
+  source: redhat-operators
   sourceNamespace: openshift-marketplace
